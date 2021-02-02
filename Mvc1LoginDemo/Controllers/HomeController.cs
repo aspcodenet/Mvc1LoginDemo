@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Mvc1LoginDemo.Controllers
 {
@@ -18,7 +19,7 @@ namespace Mvc1LoginDemo.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index() //PUBLIK!!!
         {
             return View();
         }
